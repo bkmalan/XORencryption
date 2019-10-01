@@ -61,11 +61,9 @@ char* decipher(char* bk,char* key)	{
 		if(x[i+1] >= 49)	
 			x[i+1] -= 39;
 		if(x[i])
-			dec[j] =	pow(16,x[i]) + x[i+1];
+			dec[j] = pow(16,x[i]) + x[i+1];
 		else
 			dec[j] += x[i+1];
-	//	dec[j] = dec[j] ^ key[i % m];
- 	//	index += sprintf(&decrypt[index], "%c", *(dec+j));
 		j++;
 		i++;
 	}
